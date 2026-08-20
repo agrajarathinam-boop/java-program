@@ -1,0 +1,82 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        tn a = new tn();
+        tn b = new tn();
+
+        ap a1 = new ap();
+        ap a2 = new ap();
+        ap a3 = new ap();
+
+        a.set_dim("chennai", 2000000);
+        b.set_dim("madurai", 300000);
+
+        a.display();
+        b.display();
+
+        System.out.println("_________________");
+
+        a1.set_dim("tirupathi", 300000);
+        a2.set_dim("guntur", 401252);
+        a3.set_dim("kakinada", 3264512);
+
+        a1.display();
+        a2.display();
+        a3.display();
+    }
+}
+
+class tn
+{
+    static String state = "TAMILNADU";
+
+    String district;
+    int n;
+
+    public void set_dim(String a, int b)
+    {
+        district = a;
+        n = b;
+    }
+
+    public void display()
+    {
+        System.out.println("PM: " + common.uni);
+        System.out.println("CM: VIJAY");
+        System.out.println("STATE NAME: " + state);
+        System.out.println("DISTRICT NAME: " + district);
+        System.out.println("POPULATION: " + n);
+        System.out.println("       ");
+    }
+}
+
+class ap
+{
+    static String state = "ANDHRA PRADESH";
+
+    String district;
+    int n;
+
+    public void set_dim(String a, int b)
+    {
+        district = a;
+        n = b;
+    }
+
+    public void display()
+    {
+        System.out.println("PM: " + common.uni);
+        System.out.println("CM: Chandra Babu Naidu");
+        System.out.println("STATE NAME: " + state);
+        System.out.println("DISTRICT NAME: " + district);
+        System.out.println("POPULATION: " + n);
+        System.out.println("       ");
+
+    }
+}
+
+class common
+{
+    static String uni = "modi mama";
+}

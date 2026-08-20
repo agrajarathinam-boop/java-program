@@ -1,0 +1,29 @@
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+    int a, b;
+    int count;
+    int point;
+    int flag=0;
+    for(int i=250;i<751;i++)
+    {
+        count=0;
+        point=0;
+        b=i;
+        while(b>0)
+        {
+            a=b%10;
+            if(a==2 || a==5 || a==7 || a==9 || a==3)
+                count++;
+            else
+                point++;
+            b=b/10;
+        }
+
+        if (count==2 && point==1)
+         flag++;
+    }
+    System.out.println(" "+flag);
+    }
+}
