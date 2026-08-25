@@ -1,0 +1,20 @@
+public class Main 
+{
+    public static int rag(int a,int b)
+    {  
+        while (b != 0) 
+        {
+            int temp=b;
+            b =a%b; 
+            a = temp; 
+        }
+        return a;
+    }
+    public static void main(String[] args)
+    {
+        int []a={45,75};
+        int gcd=a[0];
+        gcd=rag(gcd,a[1]);
+        System.out.println("THE GCD IS :"+gcd);
+    }
+}
